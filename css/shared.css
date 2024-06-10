@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import "shared/var.css";
+@import "shared/base.css";
+@import "../fonts/iconmoon/style.css";
+@import "shared/bootstrap.min.css";
+@import "shared/header.css";
+@import "shared/footer.css";
+@import "sections/main-section.css";
+@import "shared/button.css";
+

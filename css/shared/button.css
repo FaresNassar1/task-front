@@ -1,0 +1,15 @@
+.btn{
+
+}
+.product-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    padding: 16px;
+    background-color: var(--primary-color);
+    color: var(--light-font);
+    font-size: 25px;
+    border-radius: 0 0 var(--primary-radius) var(--primary-radius);
+}

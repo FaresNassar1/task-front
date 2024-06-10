@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-text-size-adjust: none;
+    font-family: 'Tajawal';
+}
+
+body {
+    cursor: default;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+a[href] {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--dark-font);
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+.mt-20{
+    margin-top:20px;
+}

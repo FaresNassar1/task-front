@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="fast food" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css
+    "
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- -----------------------start-header--------------------------- -->
+    <header class="header">
+      <div class="top-bar">
+        <div class="movetext">
+          <h3 class="top-bar-title">
+            اطلب متجر مثل هذا المتجر في ارخص الاسعار
+          </h3>
+          <h3 class="top-bar-title">منصة Estor.ps ترحب بكم</h3>
+        </div>
+      </div>
+      <div class="sub-header">
+        <div class="container">
+          <div class="sub-header-content">
+            <ul class="sub-header--item">
+              <li><a href="#">سياسة الخصوصية</a></li>
+              <li><a href="#">شروط الاستخدام</a></li>
+              <li><a href="#">من نحن</a></li>
+            </ul>
+            <div class="sub-header--lang">
+              <span>اللغة:</span>
+              <button id="menuButton" class="hide">
+                <span id="selected-lang" class="lang-title">
+                  <img src="./assets/saudi-arabia.png" alt="" /> العربية
+                  <span class="icon-arrow_drop_down"></span>
+                </span>
+              </button>
+              <div id="language-respons-normal" class="dropdown">
+                <ul class="dropdown-content-lang">
+                  <li
+                    onclick="setLanguage('English', './assets/united-states-of-america.png')"
+                  >
+                    <img src="./assets/united-states-of-america.png" alt="" />
+                    <span> English</span>
+                  </li>
+                  <li
+                    onclick="setLanguage('العربية', './assets/saudi-arabia.png')"
+                  >
+                    <img src="./assets/saudi-arabia.png" alt="" />
+                    العربية
+                  </li>
+                  <li onclick="setLanguage('china', './assets/china.png')">
+                    <img src="./assets/china.png" alt="" />
+                    china
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar-content">
+            <img src="./assets/logo.png" width="120px" alt="" />
+            <div class="search-container">
+              <div class="with-drop">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    جميع التصنيفات<i class="icon-arrow_drop_down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">معجنات</a>
+                    <a href="#">شاورما</a>
+                    <a href="#">فلافل </a>
+                    <a href="#">اكل شعبي </a>
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="ابحث عن المنتج...."
+                />
+              </div>
+              <div class="search-icon"><i class="icon-search"></i></div>
+            </div>
+            <ul class="nav-tool">
+              <li class="cart-icon">
+                <a href=""><i class="icon-cart1"></i></a>
+                <span class="notification-badge">3</span>
+              </li>
+              <li class="user-icon">
+                <a href="#"><i class="icon-user1"></i></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#"><span class="icon-file-empty"></span> طلباتي</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-star-full"></span> المفضلة</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-user-o"></span> حسابي</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="icon-sign-out"></span> تسجيل الخروج</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ul class="nav-list">
+            <li><a href="">الرئيسية</a></li>
+            <li><a href="">معجنات</a></li>
+            <li><a href="">شاورما</a></li>
+            <li><a href="">برغر</a></li>
+            <li><a href="">وجبات شرقية</a></li>
+            <li><a href="">مشاوي</a></li>
+            <li><a href="">فلافل</a></li>
+            <li><a href="">مشروبات</a></li>
+            <li><a href="">بروست</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="bottom-nav">
+        <ul>
+          <li><a href="#"><i class="icon-home"></i> الرئيسية</a></li>
+          <li><a href="#"><i class="icon-apps"></i> التصنيفات</a></li>
+          <li><a href="#"><i class="icon-shopping-cart"></i> سلة الشراء</a></li>
+          <li><a href="#"><i class="icon-user"></i> الملف الشحصي</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- -----------------------end-header--------------------------- -->
+
+    <!-- -----------------------start-slider && list of categories--------------------------- -->
+
+    <section class="section mv-50">
+      <div class="container">
+        <div class="row reverse">
+          <div class="col-md-3 col-sm-12">
+            <div class="list-categories">
+              <div class="catigories-content">
+                <div class="list-categories--title">التصنيفات</div>
+                <div class="list-categories--list">
+                  <ul>
+                    <li>
+                      <img src="./assets/c1.png" alt="" /><a href="">معجنات </a>
+                    </li>
+                    <li>
+                      <img src="./assets/6594627.png" alt="" /><a href=""
+                        >شاورما</a
+                      >
+                    </li>
+                    <li>
+                      <img src="./assets/c2.png" alt="" /> <a href="">برجر</a>
+                    </li>
+                    <li>
+                      <img src="./assets/ss.png" alt="" />
+                      <a href="">وجبات شرقية</a>
+                    </li>
+                    <li>
+                      <img src="./assets/we.png" alt="" /><a href="">مشاوي</a>
+                    </li>
+                    <li>
+                      <img src="./assets/4727267.png" alt="" /><a href=""
+                        >فلافل</a
+                      >
+                    </li>
+                    <li>
+                      <img src="./assets/soda.png" alt="" /><a href=""
+                        >مشروبات</a
+                      >
+                    </li>
+                    <li>
+                      <img src="./assets/5110770.png" alt="" /><a href=""
+                        >عرض الكل</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            <div
+              id="slider-1"
+              class="owl-flex owl-carousel owl-theme owl-dafault home-slider"
+            >
+              <div class="item">
+                <div class="main-slider">
+                  <img src="/assets/slider1-food.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="main-slider">
+                  <img src="/assets/slider-2.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------------end-slider && list of categories--------------------------- -->
+
+    <!-- -----------------------start categories--------------------------- -->
+
+    <section class="section mv-50">
+      <div class="container">
+        <div class="section-info">
+          <h2 class="section--title">اقسام الطعام</h2>
+          <a href="" class="section--span"
+            >عرض المزيد <span class="icon-keyboard_arrow_left"></span
+          ></a>
+        </div>
+        <div
+          id="slider-2"
+          class="owl-flex owl-carousel owl-theme owl-dafault category-slider section-content"
+        >
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img">
+                <img src="/assets/4727267.png" alt="" />
+              </div>
+              <div class="categ--title">فلافل</div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img"><img src="/assets/soda.png" alt="" /></div>
+              <div class="categ--title">مشروبات</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img">
+                <img src="/assets/6594627.png" alt="" />
+              </div>
+              <div class="categ--title">شاورما</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img"><img src="/assets/c1.png" alt="" /></div>
+              <div class="categ--title">بيتزا</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img"><img src="/assets/c2.png" alt="" /></div>
+              <div class="categ--title">برجر</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img"><img src="/assets/soda.png" alt="" /></div>
+              <div class="categ--title">عصائر</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img"><img src="/assets/ss.png" alt="" /></div>
+              <div class="categ--title">أكل شعبي</div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img"><img src="/assets/c1.png" alt="" /></div>
+              <div class="categ--title">فلافل</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img"><img src="/assets/c2.png" alt="" /></div>
+              <div class="categ--title">فلافل</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img"><img src="/assets/soda.png" alt="" /></div>
+              <div class="categ--title">فلافل</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="" class="categ-slider">
+              <div class="categ-img"><img src="/assets/ss.png" alt="" /></div>
+              <div class="categ--title">فلافل</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------------end categories--------------------------- -->
+
+    <!-- --------------(template)---------start products--------------------------- -->
+
+    <section class="section mv-50">
+      <div class="container">
+        <div class="section-info">
+          <h2 class="section--title">معجنات</h2>
+          <a href="" class="section--span"
+            >عرض المزيد<span class="icon-keyboard_arrow_left"></span
+          ></a>
+        </div>
+
+        <div
+          id="slider-2"
+          class="owl-flex owl-carousel owl-theme owl-dafault product-slider section-content"
+        >
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product1.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product2.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-close"></span>حذف من السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product3.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product4.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-close"></span>حذف من السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product5.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product1.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-close"></span>حذف من السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product3.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product2.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-close"></span>حذف من السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product5.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- '--------------------------------' -->
+    <section class="section mv-50">
+      <div class="container">
+        <div class="section-info">
+          <h2 class="section--title">برجر</h2>
+          <a href="" class="section--span"
+            >عرض المزيد<span class="icon-keyboard_arrow_left"></span
+          ></a>
+        </div>
+
+        <div
+          id="slider-2"
+          class="owl-flex owl-carousel owl-theme owl-dafault product-slider section-content"
+        >
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product2.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product2.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product2.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-close"></span>حذف من السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product2.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product2.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-close"></span>حذف من السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product2.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------end products--------------------------- -->
+    <!-- -----------------------start trend--------------------------- -->
+
+    <section class="section mv-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="trend--image">
+              <img src="./assets/image.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="trend--image">
+              <img src="./assets/image.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------------end trend--------------------------- -->
+    <!-- --------------(template)---------start products--------------------------- -->
+    <section class="section mv-50">
+      <div class="container">
+        <div class="section-info">
+          <h2 class="section--title">وجبات شرقية</h2>
+          <a href="" class="section--span"
+            >عرض المزيد<span class="icon-keyboard_arrow_left"></span
+          ></a>
+        </div>
+
+        <div
+          id="slider-2"
+          class="owl-flex owl-carousel owl-theme owl-dafault product-slider section-content"
+        >
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product3.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product3.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product3.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-close"></span>حذف من السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product3.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product3.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-close"></span>حذف من السلة
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="products">
+              <div class="product-img shine-effect">
+                <img src="/assets/product3.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">
+                  <span class="old">₪40</span>
+                  <span class="new-price">₪30</span>
+                </div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- '--------------------------------' -->
+
+    <section class="section mv-50">
+      <div class="container">
+        <div class="section-info">
+          <h2 class="section--title">العروض</h2>
+          <a href="" class="section--span"
+            >عرض المزيد<span class="icon-keyboard_arrow_left"></span
+          ></a>
+        </div>
+
+        <div
+          id="slider-2"
+          class="owl-flex owl-carousel owl-theme owl-dafault product-slider section-content"
+        >
+          <div class="item">
+            <div class="products">
+              <img src="./assets/design.png" alt="" class="design" />
+              <div class="product-img shine-effect">
+                <img src="/assets/product4.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <h3 class="product--title">بيتزا اسلامي</h3>
+                <div class="product--price">₪40</div>
+              </div>
+              <button class="btn product-btn mt-20" type="submit">
+                <span class="icon-shopping-cart"></span>اضافة الى السلة
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------start footer--------------------------- -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 ">
+            <div class="footer-content">
+              <div class="footer--logo">
+                <img src="./assets/logo.png" alt="" />
+              </div>
+              <div class="footer--desc">
+                متجر مطعم الكباب التركي هو احدى منتجات estor.ps والذي تم انشائه
+                من خلال شركة سوبر كود
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-list">
+              <div class="footer-list--title">اتصل بنا</div>
+              <ul>
+                <li>
+                  <span class="icon-comments-o"></span><a href="">اتصل بنا</a>
+                </li>
+                <li>
+                  <span class="icon-phone"></span><a href="">0593286487</a>
+                </li>
+                <li><span class="icon-whatsapp"></span><a href="">وتساب</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-list">
+              <div class="footer-list--title">روابط</div>
+              <ul>
+                <li>
+                  <span class="icon-gears"></span><a href="">سياسة الخصوصية</a>
+                </li>
+                <li>
+                  <span class="icon-files"></span><a href="">شروط الاستخدام</a>
+                </li>
+                <li><span class="icon-edit"></span><a href="">من نحن</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-12">
+            <div class="social-content">
+              <div class="footer--image">
+                <img src="./assets/1.png" alt="" />
+                <img src="./assets/2.png" alt="" />
+              </div>
+              <div class="social-icons">
+                <h3 class="social-icons--title">التواصل الاجتماعي</h3>
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <span class="icon-facebook"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href=""> <span class="icon-instagram"></span></a>
+                    </li>
+                    <li>
+                      <a href=""> <span class="icon-messenger"></span></a>
+                    </li>
+                    <li>
+                      <a href=""> <span class="icon-linkedin"></span></a>
+                    </li>
+                    <li>
+                      <a href=""><span class="icon-location1"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="sub-footer-contnet">
+            <h3 class="sub-footer--title">جميع الحقوق محفوظة @2024</h3>
+            <p class="sub-footer--desc">
+              صنع بكل <span class="icon-heart"></span> بواسطة تنفيذه من خلال
+              Estor.ps
+            </p>
+            <div class="payment-list">
+              <img src="./assets/paypal.png" alt="" />
+
+              <img src="./assets/MasterCard.png" alt="" />
+              <img src="./assets/visa .png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- -----------------------end footer--------------------------- -->
+
+    <script src="js/javascript.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".home-slider").owlCarousel({
+          rtl: true,
+          margin: 10,
+          loop: true,
+          autoplay: true,
+          smartSpeed: 800,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+      $(document).ready(function () {
+        $(".category-slider").owlCarousel({
+          rtl: true,
+          margin: 30,
+          smartSpeed: 800,
+          responsive: {
+            0: {
+              items: 2,
+            },
+            300: {
+              items: 2,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+            1200: {
+              items: 7,
+            },
+
+          },
+        });
+      });
+      $(document).ready(function () {
+        $(".product-slider").owlCarousel({
+          rtl: true,
+          margin: 15,
+          smartSpeed: 800,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            992: { items: 3 },
+            1200: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
+    "></script>
+  </body>
+</html>

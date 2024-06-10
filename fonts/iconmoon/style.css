@@ -1,0 +1,343 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon.eot?kvzcw7');
+  src:  url('./fonts/icomoon.eot?kvzcw7#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?kvzcw7') format('truetype'),
+    url('./fonts/icomoon.woff?kvzcw7') format('woff'),
+    url('./fonts/icomoon.svg?kvzcw7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-messenger-svgrepo-com .path1:before {
+  content: "\e906";
+  color: rgb(255, 255, 255);
+}
+.icon-messenger-svgrepo-com .path2:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-messenger-svgrepo-com .path3:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-instagram-internet-media-svgrepo-com .path1:before {
+  content: "\e909";
+  color: rgb(205, 204, 210);
+}
+.icon-instagram-internet-media-svgrepo-com .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-instagram-internet-media-svgrepo-com .path3:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.79;
+}
+.icon-instagram-internet-media-svgrepo-com .path4:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.79;
+}
+.icon-instagram-internet-media-svgrepo-com .path5:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.79;
+}
+.icon-instagram-1-svgrepo-com .path1:before {
+  content: "\e90e";
+  color: rgb(0, 0, 0);
+}
+.icon-instagram-1-svgrepo-com .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-instagram-1-svgrepo-com .path3:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-instagram-1-svgrepo-com .path4:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-instagram-1-svgrepo-com .path5:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-instagram-1-svgrepo-com .path6:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-messenger-color-svgrepo-com:before {
+  content: "\e919";
+  color: #007fff;
+}
+.icon-tiktok-icon-black-1-logo-svgrepo-com .path1:before {
+  content: "\e91a";
+  color: rgb(0, 0, 0);
+}
+.icon-tiktok-icon-black-1-logo-svgrepo-com .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(238, 29, 82);
+}
+.icon-tiktok-icon-black-1-logo-svgrepo-com .path3:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-tiktok-icon-black-1-logo-svgrepo-com .path4:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(105, 201, 208);
+}
+.icon-tiktok-icon-black-1-logo-svgrepo-com .path5:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(105, 201, 208);
+}
+.icon-tiktok-icon-black-1-logo-svgrepo-com .path6:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: rgb(105, 201, 208);
+}
+.icon-tiktok-icon-black-1-logo-svgrepo-com .path7:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(105, 201, 208);
+}
+.icon-tiktok-icon-black-1-logo-svgrepo-com .path8:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(238, 29, 82);
+}
+.icon-tiktok-icon-black-1-logo-svgrepo-com .path9:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-twitter-svgrepo-com .path1:before {
+  content: "\e924";
+  color: rgb(29, 161, 242);
+}
+.icon-twitter-svgrepo-com .path2:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-linkedin-svgrepo-com .path1:before {
+  content: "\e926";
+  color: rgb(0, 119, 181);
+}
+.icon-linkedin-svgrepo-com .path2:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-linkedin-svgrepo-com .path3:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-facebook-svgrepo-com .path1:before {
+  content: "\e929";
+  color: rgb(24, 119, 242);
+}
+.icon-facebook-svgrepo-com .path2:before {
+  content: "\e92a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-saudi-arabia:before {
+  content: "\e92b";
+}
+.icon-united-states-of-america:before {
+  content: "\e92c";
+}
+.icon-turkey:before {
+  content: "\e92d";
+}
+.icon-china:before {
+  content: "\e92e";
+}
+.icon-tiktok:before {
+  content: "\e933";
+}
+.icon-user:before {
+  content: "\e934";
+}
+.icon-cart:before {
+  content: "\e900";
+}
+.icon-shopping:before {
+  content: "\e900";
+}
+.icon-ecommerce:before {
+  content: "\e900";
+}
+.icon-buy:before {
+  content: "\e900";
+}
+.icon-purchase:before {
+  content: "\e900";
+}
+.icon-location1:before {
+  content: "\e916";
+}
+.icon-messenger:before {
+  content: "\e936";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube1:before {
+  content: "\ea9d";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-mic:before {
+  content: "\e91e";
+}
+.icon-file-empty:before {
+  content: "\e939";
+}
+.icon-cart1:before {
+  content: "\e93a";
+}
+.icon-search2:before {
+  content: "\e986";
+}
+.icon-sun1:before {
+  content: "\e9d4";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-google3:before {
+  content: "\ea88";
+}
+.icon-shopping-cart:before {
+  content: "\e901";
+}
+.icon-close:before {
+  content: "\e911";
+}
+.icon-dots-horizontal-triple:before {
+  content: "\e908";
+}
+.icon-menu1:before {
+  content: "\eb1b";
+}
+.icon-close1:before {
+  content: "\e907";
+}
+.icon-search3:before {
+  content: "\e93d";
+}
+.icon-search:before {
+  content: "\e902";
+}
+.icon-search1:before {
+  content: "\e904";
+}
+.icon-mail-envelope-closed:before {
+  content: "\e905";
+}
+.icon-files:before {
+  content: "\e932";
+}
+.icon-apps:before {
+  content: "\e93f";
+}
+.icon-arrow_drop_down:before {
+  content: "\e903";
+}
+.icon-clear:before {
+  content: "\e913";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e914";
+}
+.icon-keyboard_arrow_left:before {
+  content: "\e915";
+}
+.icon-menu5:before {
+  content: "\eb1c";
+}
+.icon-home:before {
+  content: "\e93e";
+}
+.icon-sign-out:before {
+  content: "\e938";
+}
+.icon-user1:before {
+  content: "\e935";
+}
+.icon-edit:before {
+  content: "\e92f";
+}
+.icon-pencil-square-o:before {
+  content: "\e92f";
+}
+.icon-comments-o:before {
+  content: "\e930";
+}
+.icon-cogs:before {
+  content: "\e931";
+}
+.icon-gears:before {
+  content: "\e931";
+}
+.icon-user-o:before {
+  content: "\e937";
+}
