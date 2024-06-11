@@ -17,6 +17,8 @@
   font-weight: 500;
 }
 .section--span {
+  display: flex;
+  align-items: center;
   font-size: 26px;
   color: var(--secondary-color) !important;
   font-weight: 700;

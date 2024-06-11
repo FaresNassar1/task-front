@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="fast food" />
-    <title>Document</title>
+    <meta name="description" content="Suber Food: Delicious fast food delivered quickly to your doorstep." />
+    <title>Suber Food</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/home.css" />
     <link
       rel="stylesheet"
@@ -79,7 +80,9 @@
       <div class="navbar">
         <div class="container">
           <div class="navbar-content">
-            <img src="./assets/logo.png" width="120px" alt="" />
+            <a href="#"
+              ><img src="./assets/logo.png" width="120px" alt="suber food logo"
+            /></a>
             <div class="search-container">
               <div class="with-drop">
                 <div class="dropdown">
@@ -145,13 +148,20 @@
         </div>
       </nav>
 
-
-      <div class="bottom-nav">
+      <div class="mobile-nav">
         <ul>
-          <li><a href="#"><i class="icon-home"></i> الرئيسية</a></li>
-          <li><a href="#"><i class="icon-apps"></i> التصنيفات</a></li>
-          <li><a href="#"><i class="icon-shopping-cart"></i> سلة الشراء</a></li>
-          <li><a href="#"><i class="icon-user"></i> الملف الشحصي</a></li>
+          <li>
+            <a href="#"><i class="icon-home"></i> الرئيسية</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-apps"></i> التصنيفات</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-shopping-cart"></i> سلة الشراء</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-user"></i> الملف الشحصي</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -255,7 +265,9 @@
 
           <div class="item">
             <a href="" class="categ-slider">
-              <div class="categ-img"><img src="./assets/soda.png" alt="" /></div>
+              <div class="categ-img">
+                <img src="./assets/soda.png" alt="" />
+              </div>
               <div class="categ--title">مشروبات</div>
             </a>
           </div>
@@ -281,7 +293,9 @@
           </div>
           <div class="item">
             <a href="" class="categ-slider">
-              <div class="categ-img"><img src="./assets/soda.png" alt="" /></div>
+              <div class="categ-img">
+                <img src="./assets/soda.png" alt="" />
+              </div>
               <div class="categ--title">عصائر</div>
             </a>
           </div>
@@ -306,7 +320,9 @@
           </div>
           <div class="item">
             <a href="" class="categ-slider">
-              <div class="categ-img"><img src="./assets/soda.png" alt="" /></div>
+              <div class="categ-img">
+                <img src="./assets/soda.png" alt="" />
+              </div>
               <div class="categ--title">فلافل</div>
             </a>
           </div>
@@ -720,7 +736,8 @@
                 <div class="product--price">
                   <span class="old">₪40</span>
                   <span class="new-price">₪30</span>
-                </div>              </div>
+                </div>
+              </div>
               <button class="btn product-btn mt-20" type="submit">
                 <span class="icon-shopping-cart"></span>اضافة الى السلة
               </button>
@@ -734,7 +751,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-12 ">
+          <div class="col-md-3 col-sm-12">
             <div class="footer-content">
               <div class="footer--logo">
                 <img src="./assets/logo.png" alt="" />
@@ -828,79 +845,14 @@
     </footer>
     <!-- -----------------------end footer--------------------------- -->
 
-    <script src="js/javascript.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script>
-      $(document).ready(function () {
-        $(".home-slider").owlCarousel({
-          rtl: true,
-          margin: 10,
-          loop: true,
-          autoplay: true,
-          smartSpeed: 800,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 1,
-            },
-            1000: {
-              items: 1,
-            },
-          },
-        });
-      });
-      $(document).ready(function () {
-        $(".category-slider").owlCarousel({
-          rtl: true,
-          margin: 30,
-          smartSpeed: 800,
-          responsive: {
-            0: {
-              items: 2,
-            },
-            300: {
-              items: 2,
-            },
-            600: {
-              items: 3,
-            },
-            1000: {
-              items: 5,
-            },
-            1200: {
-              items: 7,
-            },
+    <script src="js/javascript.js"></script>
 
-          },
-        });
-      });
-      $(document).ready(function () {
-        $(".product-slider").owlCarousel({
-          rtl: true,
-          margin: 15,
-          smartSpeed: 800,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 2,
-            },
-            992: { items: 3 },
-            1200: {
-              items: 5,
-            },
-          },
-        });
-      });
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
     "></script>
   </body>

@@ -1,3 +1,6 @@
+
+
+
 document.getElementById("menuButton").addEventListener("click", function () {
   document.querySelector(".dropdown-content-lang").classList.toggle("show");
 });
@@ -33,3 +36,69 @@ window.onclick = function (event) {
     });
   }
 };
+
+
+$(document).ready(function () {
+  $(".home-slider").owlCarousel({
+    rtl: true,
+    margin: 10,
+    loop: true,
+    autoplay: true,
+    smartSpeed: 800,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+});
+$(document).ready(function () {
+  $(".category-slider").owlCarousel({
+    rtl: true,
+    margin: 30,
+    smartSpeed: 800,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      300: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+      1200: {
+        items: 7,
+      },
+
+    },
+  });
+});
+$(document).ready(function () {
+  $(".product-slider").owlCarousel({
+    rtl: true,
+    margin: 15,
+    smartSpeed: 800,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      992: { items: 3 },
+      1200: {
+        items: 5,
+      },
+    },
+  });
+});

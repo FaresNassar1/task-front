@@ -1,11 +1,10 @@
 .list-categories {
-  min-height: 90%;
   border: solid 1px var(--border-color);
   border-radius: var(--primary-radius);
 }
 .list-categories--title {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light-font);
   font-size: 25px;
   padding: 10px;
   border-radius: var(--primary-radius) var(--primary-radius) 0 0;
@@ -33,13 +32,8 @@
   object-fit: cover;
 }
 .categ-img {
-  align-items: center;
-  background-color: #fff;
-  border: 1px solid var(--secondary);
-  border-radius: var(--border-radius);
   display: flex;
-  justify-content: center;
-  overflow: hidden;
+  align-items: center;
   padding: 50px;
   border: solid var(--secondary-color);
   border-radius: 50%;
@@ -77,7 +71,6 @@
 }
 @media (max-width: 575.98px) {
   .list-categories--title {
-
     font-size: 20px;
   }
 }
